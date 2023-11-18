@@ -88,9 +88,15 @@ main {
 .about {
     display: flex;
     flex-direction: column;
-    width: 50%;
     padding: 3rem;
 }
+
+.about__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .about__subtitle {
     font-size: 1.5rem;
