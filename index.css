@@ -311,3 +311,47 @@ footer p {
     height: 2rem;
     border-radius: 50%;
 }
+
+/* Small screens */
+@media only screen and (max-width: 768px) {
+    .nav__menu {
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav__item {
+        text-align: right;
+        font-size: small;
+    }
+
+    .nav__list{
+        gap: 0.5rem;
+    }
+
+    #home {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skills_container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .projects_container {
+        grid-template-columns: 1fr;
+    }
+
+    .project {
+        margin-bottom: 1rem;
+    }
+
+    #contact {
+        padding: 2rem;
+    }
+
+    .contact_container {
+        flex-direction: column;
+    }
+}
