@@ -162,17 +162,38 @@ main {
     margin-bottom: 2rem;
 }
 
-#work div {
-    display: flex;
-    gap: 1.5rem;
-    margin-bottom: 1.5rem;
+.projects_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
 }
 
-#work div img {
-    width: 100%;
-    max-width: 200px;
-    height: auto;
+.project {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
     border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.project div {
+    padding: 1rem;
+}
+
+.project_title{
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.project p {
+    margin: 0;
 }
 
 /* Contact Section */
