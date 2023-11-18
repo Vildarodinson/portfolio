@@ -58,6 +58,7 @@ main {
     background-color: #333;
     color: #fff;
     text-align: center;
+    gap: 5rem;
     padding: 3rem;
 }
 
