@@ -1,10 +1,21 @@
+:root {
+    --primary-color: #1c1c1c;
+    --secondary-color: #f76c6c;
+    --background-color: #fff;
+    --text-color: #555;
+    --work-bg: #f4f4f4;
+    --home-bg: #333;
+}
+
 body {
+    background-color: var(--background-color);
+    color: var(--text-color);
     margin: 0;
 }
 
 /* Header */
 .l-header {
-    background-color: #1c1c1c;
+    background-color: var(--primary-color);
     position: fixed;
     width: 100%;
     z-index: 10;
@@ -21,6 +32,7 @@ body {
 .nav__list {
     display: flex;
     gap: 2rem;
+    list-style-type: none;
 }
 
 .nav__item {
@@ -28,7 +40,7 @@ body {
 }
 
 .nav__link {
-    color: #fff;
+    color: var(--background-color);
     text-decoration: none;
     transition: color 0.3s ease-in-out;
     -webkit-transition: color 0.3s ease-in-out;
@@ -38,7 +50,7 @@ body {
 }
 
 .nav__link:hover {
-    color: #f76c6c;
+    color: var(--secondary-color);
 }
 
 .nav__toggle {
@@ -55,8 +67,8 @@ main {
 #home {
     display: flex;
     justify-content: center;
-    background-color: #333;
-    color: #fff;
+    background-color: var(--home-bg);
+    color: var(--background-color);
     text-align: center;
     gap: 5rem;
     padding: 3rem;
@@ -68,7 +80,7 @@ main {
 }
 
 #home span {
-    color: #f76c6c;
+    color: var(--secondary-color);
 }
 
 /* About Section */
@@ -85,12 +97,12 @@ main {
 
 .about__text {
     font-size: 1rem;
-    color: #555;
+    color: var(--text-color);
 }
 
 /* Skills Section */
 .skills {
-    background-color: #fff;
+    background-color: var(--background-color);
     padding: 3rem;
 }
 
@@ -119,7 +131,7 @@ main {
 
 .skills__text {
     font-size: 1rem;
-    color: #555;
+    color: var(--text-color);
     margin-bottom: 2rem;
 }
 
@@ -141,7 +153,7 @@ main {
 
 .skills__bar {
     height: 1.5rem;
-    background-color: #f76c6c;
+    background-color: var(--secondary-color);
     position: relative;
 }
 
@@ -154,7 +166,7 @@ main {
 
 /* Work Section */
 #work {
-    background-color: #f4f4f4;
+    background-color: var(--work-bg);
     padding: 3rem;
 }
 
@@ -172,7 +184,7 @@ main {
 .project {
     display: flex;
     flex-direction: column;
-    background-color: #fff;
+    background-color: var(--background-color);
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -181,7 +193,7 @@ main {
 .project img {
     width: 100%;
     height: auto;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid;
 }
 
 .project div {
@@ -199,7 +211,7 @@ main {
 
 /* Contact Section */
 #contact {
-    background-color: #fff;
+    background-color: var(--background-color);
     padding: 3rem;
 }
 
@@ -214,7 +226,7 @@ main {
 }
 
 .contact-form {
-    max-width: 600px;
+    max-width: 37.5rem;
     flex-grow: 1;
 }
 
@@ -235,14 +247,14 @@ label {
 input,
 textarea {
     padding: 0.5rem;
-    border: 1px solid #ddd;
+    border: 1px solid var(--background-color);
     border-radius: 4px;
 }
 
 button {
     padding: 0.75rem;
-    background-color: #1c1c1c;
-    color: #fff;
+    background-color: var(--primary-color);
+    color: var(--background-color);
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -250,7 +262,7 @@ button {
 }
 
 button:hover {
-    background-color: #f76c6c;
+    background-color: var(--secondary-color);
 }
 
 .contact-info {
@@ -262,18 +274,18 @@ button:hover {
 }
 
 .contact-info a {
-    color: #1c1c1c;
+    color: var(--primary-color);
     text-decoration: none;
     transition: color 0.3s ease-in-out;
 }
 
 .contact-info a:hover {
-    color: #f76c6c;
+    color: var(--secondary-color);
 }
 
 /* Footer Section */
 footer {
-    background-color: #1c1c1c;
+    background-color: var(--primary-color);
     color: #fff;
     padding: 1rem;
     text-align: center;
