@@ -24,9 +24,10 @@ body {
 
 .nav__menu{
     justify-content: end;
-    align-items: end;
+    align-items: center;
     display: flex;
     padding-right: 2rem;
+    gap: 1rem;
 }
 
 .nav__list {
