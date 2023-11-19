@@ -363,6 +363,16 @@ footer p {
         flex-direction: column;
     }
 
+    .about__container{
+       display: flex;
+       flex-direction: column;
+    }
+
+    .about_img{
+        max-width: 100%;
+        height: auto;
+    }
+
     .skills_container {
         grid-template-columns: 1fr;
         gap: 2rem;
