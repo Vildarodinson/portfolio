@@ -107,6 +107,8 @@ main {
     color: var(--text-color);
 }
 
+
+
 /* Skills Section */
 .skills {
     background-color: var(--background-color);
@@ -115,7 +117,10 @@ main {
 
 .section-title {
     font-size: 2rem;
-    margin-bottom: 1rem;
+}
+
+.skills__subtitle{
+    padding-bottom: 1rem;
 }
 
 .skills_container {
@@ -124,22 +129,40 @@ main {
     gap: 7rem;
 }
 
-.skills1 {
-    grid-column: 1;
-    display: flex;
-    flex-direction: column;
-}
-
 .skills2 {
     display: flex;
     gap: 1rem;
     flex-direction: column;
 }
 
+.skills1 {
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.skills1 h2{
+    margin: 0;
+}
+
 .skills__text {
     font-size: 1rem;
+    gap: 0.3rem;
     color: var(--text-color);
-    margin-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills__text p {
+    margin: 0.2rem;
+    background-color: var(--primary-color);
+    color: #ffff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
 }
 
 .skills__data {
