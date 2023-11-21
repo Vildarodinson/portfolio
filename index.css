@@ -132,7 +132,7 @@ main {
     margin-right: 2rem;
     box-shadow: 0 0 1.3rem rgba(0, 0, 0, 0.1);
     border-radius: 3rem;
-    background-color: var(--skills-bg);
+    background-color: var(--background-color);
     padding: 3rem;
     margin-bottom: 3rem;
     -webkit-border-radius: 3rem;
@@ -242,8 +242,6 @@ main {
 }
 
 .project {
-    display: grid;
-    grid-template-columns: auto 1fr;
     background-color: var(--background-color);
     border-radius: 1rem;
     overflow: hidden;
