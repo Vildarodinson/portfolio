@@ -308,6 +308,7 @@ main {
 }
 
 .project p {
+    padding-bottom: 0.2rem;
     margin: 0;
 }
 
