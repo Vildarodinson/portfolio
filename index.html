@@ -169,7 +169,7 @@
               </a>
               <div>
                 <p class="project_title">Ecommerce Website</p>
-                <p>Next.js, Sanity, CSS</p>
+                <p class="project_subtitle">Next.js, Sanity, CSS</p>
               </div>
             </div>
             <div class="project">
@@ -185,7 +185,7 @@
               </a>
               <div>
                 <p class="project_title">Wikipedia</p>
-                <p>Django, Markdown, CSS</p>
+                <p class="project_subtitle">Django, Markdown, CSS</p>
               </div>
             </div>
             <div class="project">
@@ -204,7 +204,7 @@
               </a>
               <div>
                 <p class="project_title">Streaming Website</p>
-                <p>Next.js, Tailwind, Prisma, MongoDB</p>
+                <p class="project_subtitle">Next.js, Tailwind, Prisma, MongoDB</p>
               </div>
             </div>
             <div class="project">
@@ -223,7 +223,7 @@
               </a>
               <div>
                 <p class="project_title">WebPortal</p>
-                <p>
+                <p class="project_subtitle">
                   Next.js, Tailwind, PostgresSQL, Tanstack React Query,
                   TypeScript
                 </p>
@@ -235,51 +235,56 @@
 
       <!--===== CONTACT =====-->
       <section id="contact">
-        <h2>Contact</h2>
+        <div class="contact_main">
+          <h2>Contact</h2>
 
-        <div class="contact_container">
-          <div class="contact-form">
-            <form action="#" method="post" id="contactForm">
-              <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required />
-              </div>
+          <div class="contact_container">
+            <div class="contact-form">
+              <form action="#" method="post" id="contactForm">
+                <div class="form-group">
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" required />
+                </div>
 
-              <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required />
-              </div>
+                <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
 
-              <div class="form-group">
-                <label for="subject">Subject:</label>
-                <input type="text" id="subject" name="subject" required />
-              </div>
+                <div class="form-group">
+                  <label for="subject">Subject:</label>
+                  <input type="text" id="subject" name="subject" required />
+                </div>
 
-              <div class="form-group">
-                <label for="comments">Comments:</label>
-                <textarea
-                  id="comments"
-                  name="comments"
-                  rows="4"
-                  required
-                ></textarea>
-              </div>
+                <div class="form-group">
+                  <label for="comments">Comments:</label>
+                  <textarea
+                    id="comments"
+                    name="comments"
+                    rows="4"
+                    required
+                  ></textarea>
+                </div>
 
-              <button type="submit">Submit</button>
-            </form>
-          </div>
-          <div class="contact-info">
-            <div>
-              <p>Github</p>
-              <p>
-                <a href="https://github.com/Vildarodinson" target="_blank"
-                  >https://github.com/Vildarodinson</a
-                >
-              </p>
+                <button type="submit">Submit</button>
+              </form>
             </div>
-            <div>
-              <p>Gmail</p>
-              <p>andrewleurs2@gmail.com</p>
+            <div class="contact-info">
+              <div><h2>Let's Talk</h2></div>
+              <div>
+                <p>Github</p>
+                <p>
+                  <a href="https://github.com/Vildarodinson" target="_blank"
+                    >https://github.com/Vildarodinson</a
+                  >
+                </p>
+              </div>
+              <div>
+                <p>Feel Free to send me an email at:</p>
+                <a href="mailto:andrewleurs2@gmail.com"
+                  ><p class="email">andrewleurs2@gmail.com</p></a
+                >
+              </div>
             </div>
           </div>
         </div>
@@ -291,14 +296,20 @@
       <div class="footer-content">
         <p>Connect with me on social media:</p>
         <div class="social-icons">
-          <a href="#" class="footer__icon"
+          <a href="https://www.facebook.com/profile.php?id=100017707361230" class="footer__icon" target="_blank"
             ><img src="assets/icons/facebook.webp" alt="Facebook"
           /></a>
-          <a href="#" class="footer__icon"
-            ><img src="assets/icons/instagram.webp" alt="Instagram"
+          <a href="https://www.instagram.com/raghael_lancers/" class="footer__icon"
+            target="_blank"><img src="assets/icons/instagram.webp" alt="Instagram"
           /></a>
-          <a href="#" class="footer__icon"
-            ><img src="assets/icons/twitter.png" alt="Twitter"
+          <a href="https://github.com/Vildarodinson" class="footer__icon"
+           target="_blank" ><img src="assets/icons/github.png" alt="Github" target="_blank"
+          /></a>
+          <a href="https://www.linkedin.com/in/andrew-leurs-a096b4278/" class="footer__icon" target="_blank"
+            ><img src="assets/icons/linkedin.png" alt="Linkedin"
+          /></a>
+          <a href="mailto:andrewleurs2@gmail.com" class="footer__icon" target="_blank"
+            ><img src="assets/icons/gmail.png" alt="Gmail"
           /></a>
         </div>
         <p>&copy; 2023 Andrew. All rights reserved.</p>

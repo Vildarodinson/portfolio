@@ -17,24 +17,34 @@ function applyTheme(theme) {
       root.style.setProperty("--text-color", "#555");
       root.style.setProperty("--work-bg", "#f4f4f4");
       root.style.setProperty("--home-bg", "#333");
-
+      root.style.setProperty("--contact-bg", "#f4f4f4");
+      root.style.setProperty("--gradient1", "#451f1c");
+      root.style.setProperty("--gradient2", "#000000");
+      root.style.setProperty("--background-text-color", "#fff");
       break;
     case 2:
       root.style.setProperty("--primary-color", "#2c3e50");
       root.style.setProperty("--secondary-color", "#6b63c9");
       root.style.setProperty("--background-color", "#ecf0f1");
       root.style.setProperty("--text-color", "#333");
-      root.style.setProperty("--work-bg", "#dcdcdc");
+      root.style.setProperty("--work-bg", "#ecf0f1");
       root.style.setProperty("--home-bg", "#456");
-
+      root.style.setProperty("--contact-bg", "#ecf0f1");
+      root.style.setProperty("--gradient1", "#362c52");
+      root.style.setProperty("--gradient2", "#000000");
+      root.style.setProperty("--background-text-color", "#ecf0f1");
       break;
     case 3:
-      root.style.setProperty("--primary-color", "#007ea7");
-      root.style.setProperty("--secondary-color", "#00a8e8");
-      root.style.setProperty("--background-color", "#90e0ef");
-      root.style.setProperty("--text-color", "#555");
-      root.style.setProperty("--work-bg", "#b3e3ff");
-      root.style.setProperty("--home-bg", "#789");
+      root.style.setProperty("--primary-color", "#123a54");
+      root.style.setProperty("--secondary-color", "#1399f2");
+      root.style.setProperty("--background-color", "#0b202e");
+      root.style.setProperty("--text-color", "#fff");
+      root.style.setProperty("--work-bg", "#123a54");
+      root.style.setProperty("--home-bg", "#1a374a");
+      root.style.setProperty("--contact-bg", "#53758c");
+      root.style.setProperty("--gradient1", "#1d3240");
+      root.style.setProperty("--gradient2", "#000000");
+      root.style.setProperty("--background-text-color", "#b5e2ff");
       break;
   }
 }

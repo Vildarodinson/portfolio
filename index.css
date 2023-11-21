@@ -5,6 +5,10 @@
     --text-color: #555;
     --work-bg: #f4f4f4;
     --home-bg: #333;
+    --gradient1: #451f1c;
+    --gradient2: #000000;
+    --background-text-color: #fff;
+    --contact-bg:#f4f4f4;
 }
 
 body {
@@ -41,7 +45,7 @@ body {
 }
 
 .nav__link {
-    color: var(--background-color);
+    color: var(--background-text-color);
     text-decoration: none;
     transition: color 0.3s ease-in-out;
     -webkit-transition: color 0.3s ease-in-out;
@@ -68,8 +72,8 @@ main {
 #home {
     display: flex;
     justify-content: center;
-    background-color: var(--home-bg);
-    color: var(--background-color);
+    background: linear-gradient(90deg, var(--gradient2), var(--gradient1) );
+    color: var(--background-text-color);
     text-align: center;
     gap: 5rem;
     padding: 3rem;
@@ -295,8 +299,13 @@ main {
 }
 
 .project_title {
+    font-weight: 500;
     font-size: 1.5rem;
     padding-bottom: 0.5rem;
+}
+
+.project_subtitle{
+    font-size: 1.2rem;
 }
 
 .project p {
@@ -307,6 +316,17 @@ main {
 #contact {
     background-color: var(--background-color);
     padding: 3rem;
+}
+
+.contact_main{
+    padding: 3rem;
+    background-color: var(--contact-bg);
+    box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.15);    
+    border-radius: 3rem;
+    -webkit-border-radius: 3rem;
+    -moz-border-radius: 3rem;
+    -ms-border-radius: 3rem;
+    -o-border-radius: 3rem;
 }
 
 #contact h2 {
@@ -340,6 +360,7 @@ label {
 
 input,
 textarea {
+    background-color: var(--background-text-color);
     padding: 0.5rem;
     border: 1px solid var(--primary-color);
     border-radius: 4px;
@@ -354,7 +375,7 @@ textarea:focus {
 button {
     padding: 0.75rem;
     background-color: var(--primary-color);
-    color: #fff;
+    color: var(--background-text-color);
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -371,6 +392,14 @@ button:hover {
 
 .contact-info {
     flex-shrink: 0;
+}
+
+.contact-info p{
+    font-size: 1.2rem;
+}
+
+.email{
+    color: var(--secondary-color);
 }
 
 .contact-info div {
