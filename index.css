@@ -13,6 +13,7 @@
 }
 
 body {
+    font-family: 'Roboto Mono', monospace;
     background-color: var(--background-color);
     color: var(--text-color);
     margin: 0;
@@ -96,12 +97,16 @@ main {
     padding: 3rem 0;
 }
 
-.home_text{
+.home_text {
+    justify-content: center;
     width: 30%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .home_text p{
+    padding-top: 1.2rem;
     color: #f0827a;
 }
 
@@ -174,6 +179,11 @@ main {
     background-color: var(--background-color);
     padding: 3rem;
     margin-bottom: 3rem;
+}
+
+.skills_main_container {
+    max-width: 50rem;
+    margin: 0 auto;
 }
 
 .section-title {
@@ -251,7 +261,7 @@ main {
 }
 
 .skills__names {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 500;
     display: flex;
     align-items: center;
@@ -273,8 +283,8 @@ main {
 
 .top-skills{
     padding-bottom: 1rem;
-    font-weight: 400;
-    font-size: 1.3rem;
+    font-weight: 500;
+    font-size: 1.5rem;
 }
 
 
@@ -585,6 +595,10 @@ footer p {
 
 @media only screen and (max-width: 768px) {
 
+    .project_badgets {
+        grid-template-columns: repeat(auto-fill, minmax(1.1rem, 1fr));
+    }
+
     .nav__menu {
         display: flex;
         justify-content: center;
@@ -624,11 +638,17 @@ footer p {
         font-size: 1.1rem;
     }
 
+    .skills{
+        padding: 0;
+    }
+
     .skills__text {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     .skills1{
+        justify-content: center;
+        align-items: center;
         padding-bottom: 2rem;
     }
 
@@ -650,17 +670,19 @@ footer p {
     }
 
     .contact_container {
+        display: flex;
+        gap: 4rem;
         flex-direction: column;
+    }
+
+    .contact_text_container {
+        gap: 0.3rem;
+        display: flex;
+        align-items: center;
     }
 
     .home_text {
         width: 100%
-    }
-
-    .contact_container {
-        display: flex;
-        gap: 6rem;
-        flex-direction: column;
     }
 }
 
@@ -694,8 +716,6 @@ footer p {
         box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.1);
     }
 
-   
-
     #work h2{
         display: flex;
         justify-content: center;
@@ -705,9 +725,6 @@ footer p {
         flex-direction: column;
     }
 
-    .contact-info{
-        display: none;
-    }
 
     .about_main_text{
         display: flex;
@@ -725,4 +742,52 @@ footer p {
         gap:0
     }
 
+    .contact-info{
+        padding: 2rem;
+    }
+
+    .contact_title{
+        font-size: 1.5rem;
+    }
+
+    .contact_text_container{
+        display: flex;
+        gap: 0.2rem;
+    }
+
+    .text1,
+    .text2 {
+        font-size: 1.4rem;
+    }
+
+    .contact-text,
+    .contact-details {
+        font-size: 1.2rem;
+    }
+
+    .contact_main{
+        padding: 0;
+    }
+    
+    .about{
+        padding: 3rem 1rem 1rem 1rem;
+    }
+
+    .skills {
+        background-color: var(--background-color);
+        margin-bottom: 3rem;
+        padding: 1rem;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+
+    #work {
+        padding: 1rem;
+    }
+
+    .work_section {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
