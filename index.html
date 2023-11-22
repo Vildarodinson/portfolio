@@ -6,6 +6,7 @@
 
     <link rel="stylesheet" href="index.css" />
     <script defer src="app.js"></script>
+    <script defer src="ToggleMenu.js"></script>
   </head>
 
   <body>
@@ -34,6 +35,22 @@
           </ul>
           <div><button id="themeSwitcher">Toggle Theme</button></div>
         </div>
+        <div
+          id="hamburger-icon"
+          class="nav__toggle"
+          onclick="toggleMobileMenu()"
+        >
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <ul class="mobile-menu" id="mobile-menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </div>
     </nav>
 
