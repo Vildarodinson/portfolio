@@ -10,36 +10,41 @@
 
   <body>
     <nav class="l-header">
-      <div class="nav__menu" id="nav-menu">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="#home" class="nav__link active">Home</a>
-          </li>
-          <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
-          </li>
-          <li class="nav__item">
-            <a href="#skills" class="nav__link">Skills</a>
-          </li>
-          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
-          </li>
-        </ul>
-        <div><button id="themeSwitcher">Toggle Theme</button></div>
+      <div class="nav_container">
+        <div class="nav_img_container">
+          <img src="assets/icons/navbar_logo.svg" alt="logo" />
+        </div>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">Skills</a>
+            </li>
+            <li class="nav__item">
+              <a href="#work" class="nav__link">Work</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
+          <div><button id="themeSwitcher">Toggle Theme</button></div>
+        </div>
       </div>
     </nav>
 
     <main>
       <section id="home">
         <div class="home_text">
-          <h1>
-            Hi,<br />I'm <span>Andrew</span><br />
-            Web & mobile Developer
-          </h1>
+          <h1>Hi, I'm <span>Andrew</span></h1>
+          <h2>Full Stack Web Developer</h2>
           <p>
-            Full Stack software developer in Suriname, with a passion for
-            design, creativity and communication.
+            A software developer based in Suriname, with a passion for design,
+            creativity, and technology.
           </p>
         </div>
         <div>
@@ -49,21 +54,23 @@
 
       <!--===== ABOUT =====-->
       <section class="about" id="about">
-        <h2 class="section-title">About</h2>
-
-        <div class="about__container">
-          <div class="about_main_text">
-            <h2 class="about__subtitle">Nice to meet you, I'm Andrew</h2>
-            <p class="about__text">
-              Passionate 20-year-old IT professional with independent experience
-              in diverse projects. Strong curiosity and eagerness to learn
-              enable quick mastery of new concepts and technologies. My side
-              project work is just an excuse to satisfy my curiosity about new
-              technologies and understand how the web is moving forward.
-            </p>
-          </div>
-          <div>
-            <img src="assets/images/about.webp" alt="about" class="about_img" />
+        <div class="about_box">
+          <div class="about__container">
+            <div>
+              <img
+                src="assets/images/about.webp"
+                alt="about"
+                class="about_img"
+              />
+            </div>
+            <div class="about_main_text">
+              <h2 class="section-about-title">About</h2>
+              <p class="about__text">
+                Ambitious 20-year-old IT professional with a knack for hands-on
+                projects. Quick learner, always exploring new tech. Passionate
+                about understanding the evolving web.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -73,41 +80,42 @@
         <div class="skills_main_container">
           <h2 class="section-title">Skills</h2>
 
-          <div class="skills_container">
-            <div class="skills1">
-              <h2 class="skills__subtitle">Full Stack Development</h2>
-              <div class="skills__text">
-                <p>Java</p>
-                <p>Javascript</p>
-                <p>Python</p>
-                <p>C#</p>
-                <p>C</p>
-                <p>Kotlin</p>
-                <p>SQL</p>
-                <p>HTML</p>
-                <p>CSS</p>
-                <p>Sass</p>
-                <p>React</p>
-                <p>Node.js</p>
-                <p>Next.js</p>
-                <p>Linux</p>
-                <p>Django</p>
-                <p>Sanity</p>
-                <p>Flutter</p>
-                <p>Dart</p>
-                <p>Firebase</p>
-                <p>Java</p>
-                <p>Typescript</p>
-                <p>Tailwind</p>
-                <p>PostgreSQL</p>
-                <p>MongoDB</p>
-                <p>Prisma</p>
-              </div>
+          <div class="skills1">
+            <h2 class="skills__subtitle">Full Stack Development</h2>
+            <div class="skills__text">
+              <p>Java</p>
+              <p>Javascript</p>
+              <p>Python</p>
+              <p>C#</p>
+              <p>C</p>
+              <p>Kotlin</p>
+              <p>SQL</p>
+              <p>HTML</p>
+              <p>CSS</p>
+              <p>Sass</p>
+              <p>React</p>
+              <p>Node.js</p>
+              <p>Next.js</p>
+              <p>Linux</p>
+              <p>Django</p>
+              <p>Sanity</p>
+              <p>Flutter</p>
+              <p>Dart</p>
+              <p>Firebase</p>
+              <p>Java</p>
+              <p>Typescript</p>
+              <p>Tailwind</p>
+              <p>PostgreSQL</p>
+              <p>MongoDB</p>
+              <p>Prisma</p>
             </div>
+          </div>
+          <div class="skills2-container">
+            <p class="top-skills">Top Skills</p>
             <div class="skills2">
               <div class="skills__data">
                 <div class="skills__names">
-                  <span>Flutter</span>
+                  <p>Flutter</p>
                 </div>
                 <div class="skills__bar-container">
                   <div class="skills__bar" style="width: 65%">
@@ -117,7 +125,7 @@
               </div>
               <div class="skills__data">
                 <div class="skills__names">
-                  <span>Tailwind</span>
+                  <p class="top_skill">Tailwind</p>
                 </div>
                 <div class="skills__bar-container">
                   <div class="skills__bar" style="width: 70%">
@@ -127,7 +135,7 @@
               </div>
               <div class="skills__data">
                 <div class="skills__names">
-                  <span>Next.js</span>
+                  <p>Next.js</p>
                 </div>
                 <div class="skills__bar-container">
                   <div class="skills__bar" style="width: 40%">
@@ -137,7 +145,7 @@
               </div>
               <div class="skills__data">
                 <div class="skills__names">
-                  <span class="skills__name">Python</span>
+                  <p class="skills__name">Python</p>
                 </div>
                 <div class="skills__bar-container">
                   <div class="skills__bar" style="width: 50%">
@@ -172,7 +180,9 @@
               <div>
                 <p class="project_title">Ecommerce Website</p>
                 <p class="project_subtitle">Next.js, Sanity, CSS</p>
-                <p>Where users can buy gaming equipment, add items to cart, etc</p>
+                <p>
+                  Where users can buy gaming equipment, add items to cart, etc
+                </p>
               </div>
             </div>
             <div class="project">
@@ -189,7 +199,10 @@
               <div>
                 <p class="project_title">Wikipedia</p>
                 <p class="project_subtitle">Django, Markdown, CSS</p>
-                <p>A wiki page, where users can add & remove pages, browse existing pages, edit the pages, etc</p>
+                <p>
+                  A wiki page, where users can add & remove pages, browse
+                  existing pages, edit the pages, etc
+                </p>
               </div>
             </div>
             <div class="project">
@@ -211,7 +224,10 @@
                 <p class="project_subtitle">
                   Next.js, Tailwind, Prisma, MongoDB
                 </p>
-                <p>A movie streaming website where users can watch movies in HD, also has a login and register page</p>
+                <p>
+                  A movie streaming website where users can watch movies in HD,
+                  also has a login and register page
+                </p>
               </div>
             </div>
             <div class="project">
@@ -234,7 +250,11 @@
                   Next.js, Tailwind, PostgresSQL, Tanstack React Query,
                   TypeScript
                 </p>
-                <p>Website with a login & register page, users can upload an .unl file, has CRUD for uploaded files, can email the edited file, and much more</p>
+                <p>
+                  Website with a login & register page, users can upload an .unl
+                  file, has CRUD for uploaded files, can email the edited file,
+                  and much more
+                </p>
               </div>
             </div>
           </div>
