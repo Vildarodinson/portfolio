@@ -30,12 +30,10 @@ body {
 
 #hamburger-icon {
     display: none;
-    /* Initially hide for larger screens */
 }
 
 .mobile-menu {
     display: none;
-    /* Initially hide for larger screens */
     list-style-type: none;
     padding: 0;
     background-color: var(--primary-color);
@@ -627,7 +625,7 @@ footer p {
     border-radius: 50%;
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
     .project_badgets {
         grid-template-columns: repeat(auto-fill, minmax(1.1rem, 1fr));
@@ -720,15 +718,16 @@ footer p {
     }
 }
 
+
 @media screen and (max-device-width: 520px) {
     .nav__menu {
         display: none;
     }
-    
+        
     #hamburger-icon {
         display: block;
     }
-    
+        
     .mobile-menu {
         display: none;
         flex-direction: column;
@@ -739,13 +738,10 @@ footer p {
         margin: 0;
         padding: 0;
     }
-}
 
-
-@media screen and (max-device-width: 425px) {
     .nav_container {
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 0.5rem;
+        padding-right: 1.2rem;
     }
 
     #home {
