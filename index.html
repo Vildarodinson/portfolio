@@ -5,16 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="index.css" />
-    <script defer src="main.js"></script>
+    <script defer src="ThemeSwitcher.js"></script>
     <script defer src="ToggleMenu.js"></script>
   </head>
 
   <body>
     <nav class="l-header">
       <div class="nav_container">
-        <div class="nav_img_container">
+        <div class="img-switcher-container">
           <img src="assets/icons/navbar_logo.svg" alt="logo" />
+          <div>
+            <label for="themeSwitcher" class="theme-main-text">Select Theme:</label>
+            <select id="themeSwitcher">
+              <option value="theme1">Light</option>
+              <option value="theme2">Custom</option>
+              <option value="theme3">Dark</option>
+            </select>
+          </div>
         </div>
+        
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
             <li class="nav__item">
@@ -33,7 +42,7 @@
               <a href="#contact" class="nav__link">Contact</a>
             </li>
           </ul>
-          <div><button id="themeSwitcher">Toggle Theme</button></div>
+          
         </div>
         <div
           id="hamburger-icon"

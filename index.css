@@ -1,4 +1,4 @@
-:root {
+body.theme1 {
     --primary-color: #1c1c1c;
     --secondary-color: #f76c6c;
     --background-color: #fff;
@@ -8,8 +8,63 @@
     --gradient1: #451f1c;
     --gradient2: #000000;
     --background-text-color: #fff;
-    --contact-bg:#f4f4f4;
+    --contact-bg: #f4f4f4;
     --skills-bg: #fff;
+    --skills-text: #000000;
+    --skills-top: #ff0008;
+    --skills-bg: #f4f4f4;
+    --hero-text: #ef8083;
+    --about-card: rgb(188, 186, 186);
+    --project-card: #f4f4f4;
+    --about-text: #451f1c;
+    --contact-input-bg: #ebebeb;
+    --contact-form-bg: #e3e3e3;
+}
+
+body.theme2 {
+    --primary-color: #2c3e50;
+    --secondary-color: #6b63c9;
+    --background-color: #dad1de;
+    --text-color: #333;
+    --work-bg: #dad1de;
+    --home-bg: #456;
+    --gradient1: #362c52;
+    --gradient2: #000000;
+    --background-text-color: #ecf0f1;
+    --contact-bg: #f0ecf1;
+    --skills-bg: #ecf0f1;
+    --skills-text: #7e4991;
+    --skills-top: #bb00ff;
+    --skills-bg: rgb(204, 202, 242);
+    --hero-text: #7e4991;
+    --about-card: #c6befa;
+    --project-card: #d5cffa;
+    --about-text: #362c52;
+    --contact-input-bg: #e7e3ff;
+    --contact-form-bg: #c6befa;
+}
+
+body.theme3 {
+    --primary-color: #123a54;
+    --secondary-color: #1399f2;
+    --background-color: #0b202e;
+    --text-color: #fff;
+    --work-bg: #123a54;
+    --home-bg: #1a374a;
+    --gradient1: #1d3240;
+    --gradient2: #000000;
+    --background-text-color: #b5e2ff;
+    --contact-bg: #53758c;
+    --skills-bg: #39818f;
+    --skills-text: #53c0f7;
+    --skills-top: #00d7ff;
+    --skills-bg: #53758c;
+    --hero-text: #53c0f7;
+    --about-card: #c2d4ff;
+    --project-card: #4065bc;
+    --about-text: #1d3240;
+    --contact-input-bg: #b5e2ff;
+    --contact-form-bg: #c2d4ff;
 }
 
 body {
@@ -26,6 +81,10 @@ body {
     width: 100%;
     z-index: 10;
     padding: 0.4rem;
+}
+
+.theme-main-text{
+    color: white;
 }
 
 #hamburger-icon {
@@ -74,7 +133,8 @@ body {
     height: auto;
 }
 
-.nav_img_container{
+.img-switcher-container{
+    gap: 1rem;
     display: flex;
     align-items: center
 }
@@ -140,7 +200,7 @@ main {
 
 .home_text p{
     padding-top: 1.2rem;
-    color: #f0827a;
+    color: var(--hero-text);
 }
 
 #home h1 {
@@ -164,7 +224,7 @@ main {
 
 /* About Section */
 .about {
-    background-color: #f4f4f4;
+    background-color: var(--work-bg);
     display: flex;
     flex-direction: column;
     padding: 3rem;
@@ -172,6 +232,7 @@ main {
 }
 
 .section-about-title {
+    color: #000000;
     font-size: 2.7rem;
     padding-bottom: 2rem;
 }
@@ -188,8 +249,7 @@ main {
     padding: 2rem;
     margin: 0 auto;
     border-radius: 3rem;
-    background-color: #e4e675;
-    border: 2px solid #000000;
+    background-color: var(--about-card);
     -webkit-border-radius: 3rem;
     -moz-border-radius: 3rem;
     -ms-border-radius: 3rem;
@@ -202,7 +262,7 @@ main {
 
 .about__text {
     font-size: 1.3rem;
-    color: var(--text-color);
+    color: var(--about-text);
 }
 
 /* Skills Section */
@@ -232,8 +292,9 @@ main {
 
 
 .skills2-container {
+    color: var(--secondary-color);
     border-radius: 1.5rem;
-    background-color: wheat;
+    background-color: var(--skills-bg);
     padding: 1rem;
     max-width: 60rem;
     margin: 0 auto;
@@ -263,7 +324,7 @@ main {
 .skills__text {
     font-size: 1.5rem;
     gap: 0.3rem;
-    color: black;
+    color: var(--skills-text);
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;
@@ -301,7 +362,7 @@ main {
 }
 
 .top_skill{
-    color: red;
+    color: var(--skills-top);
 }
 
 .skills__bar-container {
@@ -332,7 +393,7 @@ main {
 }
 
 .skills__percentage {
-    color: white;
+    color: #fff;
     position: absolute;
     top: 25%;
     left: 1%;
@@ -364,7 +425,7 @@ main {
  }
 
 .project {
-    background-color: #f4f4f4;
+    background-color: var(--project-card);
     border-radius: 1rem;
     overflow: hidden;
     box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.1);
@@ -418,6 +479,7 @@ main {
 }
 
 .project_title {
+    color: #000000;
     font-weight: 500;
     font-size: 1.5rem;
     padding-bottom: 0.5rem;
@@ -446,6 +508,7 @@ main {
 }
 
 .description{
+    color: var(--about-text);
     font-size: 1.1rem;
     padding-top: 0.8rem;
 }
@@ -473,10 +536,14 @@ main {
     gap: 4rem;
 }
 
+form#contactForm {
+    color: var(--about-text);
+}
+
 .contact-form {
     padding: 2rem;
     border-radius: 3rem;
-    background-color: #f4f4f4;
+    background-color: var(--contact-form-bg);
     max-width: 37.5rem;
     flex-grow: 1;
 }
@@ -501,7 +568,7 @@ main {
 }
 
 .text2 {
-    color: red;
+    color: var(--skills-top);
     font-size: 3.5rem;
 }
 
@@ -537,7 +604,7 @@ label {
 
 input,
 textarea {
-    background-color: var(--background-text-color);
+    background-color: var(--contact-input-bg);
     padding: 0.5rem;
     border: 1px solid var(--primary-color);
     border-radius: 0.5rem;
