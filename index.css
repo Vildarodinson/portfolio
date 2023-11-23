@@ -184,7 +184,7 @@ main {
 }
 
 .about_box{
-    max-width: 50rem;
+    max-width: 60rem;
     padding: 2rem;
     margin: 0 auto;
     border-radius: 3rem;
@@ -215,7 +215,7 @@ main {
 }
 
 .skills_main_container {
-    max-width: 50rem;
+    max-width: 60rem;
     margin: 0 auto;
 }
 
@@ -235,7 +235,7 @@ main {
     border-radius: 1.5rem;
     background-color: wheat;
     padding: 1rem;
-    max-width: 50rem;
+    max-width: 60rem;
     margin: 0 auto;
     -webkit-border-radius: 1.5rem;
     -moz-border-radius: 1.5rem;
