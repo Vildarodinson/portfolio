@@ -3,19 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link rel="stylesheet" href="index.css" />
-    <script defer src="ThemeSwitcher.js"></script>
-    <script defer src="ToggleMenu.js"></script>
   </head>
 
   <body>
     <nav class="l-header">
       <div class="nav_container">
         <div class="img-switcher-container">
-          <img src="assets/icons/navbar_logo.svg" alt="logo" />
+          <img src="/assets/icons/navbar_logo.svg" alt="logo" />
           <div>
-            <label for="themeSwitcher" class="theme-main-text">Select Theme:</label>
+            <label for="themeSwitcher" class="theme-main-text"
+              >Select Theme:</label
+            >
             <select id="themeSwitcher">
               <option value="theme1">Light</option>
               <option value="theme2">Custom</option>
@@ -23,7 +22,7 @@
             </select>
           </div>
         </div>
-        
+
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
             <li class="nav__item">
@@ -42,7 +41,6 @@
               <a href="#contact" class="nav__link">Contact</a>
             </li>
           </ul>
-          
         </div>
         <div
           id="hamburger-icon"
@@ -346,14 +344,19 @@
               </p>
             </div>
             <div class="contact-form">
-              <form action="#" method="post" id="contactForm">
+              <form
+                action=""
+                method="post"
+                id="contactForm"
+                onsubmit="submitForm(); return false;"
+              >
                 <div class="form-group">
                   <label for="name">First Name*</label>
-                  <input type="text" id="name" name="name" required />
+                  <input type="text" id="firstName" name="firstName" required />
                 </div>
                 <div class="form-group">
                   <label for="name">Last Name*</label>
-                  <input type="text" id="name" name="name" required />
+                  <input type="text" id="lastName" name="lastName" required />
                 </div>
                 <div class="form-group">
                   <label for="email">Email*</label>
@@ -408,4 +411,7 @@
       </div>
     </footer>
   </body>
+  <script defer src="ThemeSwitcher.js"></script>
+  <script defer src="ToggleMenu.js"></script>
+  <script src="api/formHandler.js"></script>
 </html>
