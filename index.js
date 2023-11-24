@@ -15,8 +15,8 @@ app.use(express.static(path.join(__dirname)));
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: "formdata76@gmail.com",
-    pass: "xvnrteozwlmevlwd",
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASSWORD,
   },
 });
 
@@ -35,8 +35,8 @@ app.post("/contact", async (req, res) => {
     });
 
     const mailOptions = {
-      from: "formdata76@gmail.com",
-      to: "andrewleurs2@gmail.com", 
+      from: process.env.EMAIL_USER,
+      to: "andrewleurs2@gmail.com",
       subject: "Contact Form Submission",
       text: `
         Name: ${firstName} ${lastName}
