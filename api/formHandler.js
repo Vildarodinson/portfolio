@@ -13,7 +13,6 @@ function submitForm() {
     comments,
   };
 
-  console.log("Form Data:", formData);
 
   fetch("http://localhost:3000/contact", {
     method: "POST",
